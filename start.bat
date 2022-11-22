@@ -1,2 +1,5 @@
-%appdata%/../Local/Programs/Python/Python310/Scripts/pip.exe install -r requirements.txt
-py widget.py
+@echo off
+python -m pip install -r requirements.txt
+rm widget.pyw
+cp widget.py widget.pyw
+start widget.pyw
